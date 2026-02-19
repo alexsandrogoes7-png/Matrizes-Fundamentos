@@ -70,14 +70,21 @@ inicio
             fimse
      
      
-            se(resp=1)entao
-               para l<-1 ate 4 faca
-                 para c<-1 ate 4 faca
-                    escreva(m[l,c]:4)
+            se(resp=3)entao
+               escreva(m[1,2])
+               para l<-1 ate 3 faca
+                 para c<-3 ate 4 faca
+                   se(l=3)e(c=3)entao
+                      escreva("  ")
+                   senao
+                      escreva("  ")
+                      escreva(m[l,c])
+                   fimse
                  fimpara
                     escreval()
                fimpara
             fimse
+
      
 
      ATE resp=5
