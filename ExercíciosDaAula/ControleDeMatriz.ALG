@@ -71,21 +71,37 @@ inicio
      
      
             se(resp=3)entao
-               escreva(m[1,2])
                para l<-1 ate 3 faca
-                 para c<-3 ate 4 faca
-                   se(l=3)e(c=3)entao
+                 para c<-2 ate 4 faca
+                   se(l=c)ou((l=3)e(c=2))entao
                       escreva("  ")
                    senao
-                      escreva("  ")
                       escreva(m[l,c])
                    fimse
+                   escreva(" ")
                  fimpara
                     escreval()
                fimpara
             fimse
 
+
+
+            se(resp=4)entao
+               para l<-2 ate 4 faca
+                 para c<-1 ate 3 faca
+                   se(l=c)ou((c=3)e(l=2))entao
+                      escreva("  ")
+                   senao
+                      escreva(m[l,c])
+                   fimse
+                 fimpara
+                    escreval(" ")
+               fimpara
+            fimse
      
 
      ATE resp=5
+     
+     escreval("=========================")
+     escreval("ENCERRANDO ...")
 fimalgoritmo
