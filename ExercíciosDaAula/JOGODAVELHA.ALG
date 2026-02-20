@@ -5,26 +5,28 @@ var
    numeros:inteiro
    resp1:inteiro
    resp2:inteiro
+   X,O:logico
    
     procedimento tabela()
     inicio
         para l<-1 ate 3 faca
             escreval("+---+----+----+")
             para c<-1 ate 3 faca
-               se(resp1=jogo[l,c])entao
-                       escreva("| X |")
-                    se(resp2=jogo[l,c])entao
                       escreva("| ",jogo[l,c],"|")
-                    senao
-                      escreva("| ",jogo[l,c],"|")
-                    fimse
-               fimse
             fimpara
             escreval()
         fimpara
         
         escreval("+---+----+----+")
     fimprocedimento
+    
+    funcao
+    
+    
+    
+    
+    
+    
 inicio
    numeros<-1
    resp1<-0
@@ -43,16 +45,16 @@ inicio
       
          escreval("Vai jogar [X] em qual posicao? ")
          leia(resp1)
-         tabela()
+
          
          
          
          
          escreval("Vai jogar [0] em qual posicao? ")
          leia(resp2)
+
          
-         
-       ate
+       ate (X = verdadeiro) ou (O=verdadeiro)
          
    escreval("JOGO FINALIZADO!!!")
 fimalgoritmo
